@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Video Hızı</h2>
+    
+    <div class="speed-display">
+      <span id="speedValue">1.0</span>x
+    </div>
+
+    <input type="range" id="speedSlider" min="0.25" max="5" step="0.25" value="1.0">
+    
+    <div class="preset-buttons">
+      <button data-speed="0.5">0.5x</button>
+      <button data-speed="1.0">1.0x</button>
+      <button data-speed="2.0">2.0x</button>
+    </div>
+
+    <div class="footer">
+      <small>Kısayollar: S(0.5) D(1) F(1.5) G(2) H(3)</small><br>
+      <small>Shift + > / < (Artır/Azalt)</small>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
